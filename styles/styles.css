@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+
+}
+/* nav section starts */
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+}
+.about-us{
+    width: 40%;
+}
+.about-us ul{
+    
+    
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-us ul p{
+    
+    padding: 1rem;
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+}
+.company-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.5rem ;
+}
+.company-icon img{
+    height:2rem ;
+    object-fit: cover;
+    
+}
+/* end of nav section */
+
+
+
+
+
+@media screen and (max-width: 576px){
+    /* nav section */
+    .nav-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us{
+        
+        width: fit-content;
+    }
+    .about-us ul{
+        
+       
+        flex-direction: column;
+        gap: 2rem;
+        
+        
+        
+    }
+    .about-us ul li p span{
+    padding-right: 10px;
+
+    }
+}
