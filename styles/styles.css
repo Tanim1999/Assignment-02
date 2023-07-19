@@ -23,6 +23,11 @@ background-clip: text;
 font-weight: 600;
 
 }
+.bold-text{
+    font-size: .8rem;
+    font-weight: 600;
+
+}
 .btn-primary{
     border: none;
     display: inline-flex;
@@ -190,8 +195,85 @@ background-clip: text;
 }
 .card:hover .overlay{
     display: flex ;
+    cursor: pointer;
 }
+/* end of funny video card section */
 
+/* play online game section starts */
+.online-game-img img{
+    max-width: 100%;
+
+}
+.relative-img{
+    width: 70%;
+    position: relative;
+}
+.absolute-img{
+    width: 50%;
+    position: absolute;
+    right: -7rem;
+    bottom: -7rem;
+}
+.play-online-game{
+    margin-top: 5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-online-game-descrip{
+    width: 20%;
+    
+}
+/* game genres section */
+.game-genres{
+    
+    width: 90%;
+    margin: 0 auto;
+    margin-top:10rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-areas: 
+    'a a a a b b b b c c c c d d d d e e e e'
+    'f f f f f g g g g g h h h h h i i i i i ';
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.action{ grid-area: a;
+}
+.advanture{grid-area:b;}
+.arcade{grid-area:c;}
+.educational{grid-area:d;}
+.word{grid-area:e;}
+.role-play{grid-area:f;}
+.music{grid-area:g;}
+.puzzle{grid-area:h;}
+.strategy{grid-area:i;}
+
+.genre-icon{
+    
+    border-radius: 2rem;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.genre-icon img{
+    height: 2.5rem;
+    width: 2.5rem ;
+}
+.genre-icon:hover{
+    border:2px solid #F948B2  ;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    padding: 3px 0;
+    cursor: pointer;
+}
 
 
 
@@ -227,7 +309,7 @@ background-clip: text;
         .banner-img{
             width: 100%;
             
-            margin-left: 4rem;
+            /* margin-left: 4rem; */
             
         }
         .banner-descrip{
@@ -240,30 +322,73 @@ background-clip: text;
         }
         .banner-descrip >div{
             
-            margin-left: 6rem;
+            /* margin-left: 6rem; */
         }
         /* funny video section */
         .video-cards{
             width: 90%;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            text-align: center;
             
-            margin-left: 4rem;
+            /* margin-left: 4rem; */
             gap: 4rem;
         }
         .card{
             width: fit-content;
+            margin: 0 auto;
         }
         .funny-videos-heading{
             width: 100%;
-            margin-left: 3rem;}
+            /* margin-left: 3rem;} */
+        }
+        .overlay{
+            width:97% ;
+            height:85% ;
+        }
 
+        /* play-online-games section */
+        main{
+            margin-left: 5rem;
+            
+        }
+        .play-online-game{
+            margin: 1px auto;
+            
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: 4rem;
+            
+        }
+.play-online-game-descrip{
+    width: 100%;
+    text-align: center;}
+    .relative-img{
+        width: 90%;
+
+    }
+    /* game genre section */
+    .game-genres{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+        'a b c'
+        'd e f'
+        'g h i';
+    }
+    .bold-text{
+        font-size: .6rem;
+        gap: .2rem;
+    }
+    
+}
         
         
         
     
 
-}
+
 /* tab responsive */
 @media screen and (min-width:577px) and (max-width:850px){
     /* nav section */
@@ -300,5 +425,26 @@ background-clip: text;
     .video-cards{
         margin-left: 2rem;
     }
+    .overlay{
+        width: 100%;
+        height: 70%;
+    }
+    /* play online games section */
     
+    .play-online-game{
+        
+        width: 100%;
+        flex-direction: column-reverse;  
+        justify-content: center; 
+        align-items: center; 
+}
+.play-online-game-descrip{
+    width: 100%;
+    text-align: center;
+
+}
+.relative-img{
+    
+    margin: 0 auto;
+}
 }
