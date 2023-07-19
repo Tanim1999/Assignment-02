@@ -322,6 +322,7 @@ button:hover {
 }
 
 .genre-icon {
+    border: 0;
 
     border-radius: 2rem;
     display: flex;
