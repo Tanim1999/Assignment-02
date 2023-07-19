@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
 }
 body{
@@ -20,6 +20,7 @@ font-weight: 400;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+font-weight: 600;
 
 }
 .btn-primary{
@@ -133,11 +134,27 @@ background-clip: text;
 
 /* banner section ends */
 /* online games funny videos section */
+.video-cards{
+    
+    height: auto;
+}
 .card{
     
     height:auto ;
     width:13rem ;
+    position: relative;
+    
 }
+ 
+  .play-icon{
+     padding: 15px;
+     
+     border-radius: 15px;
+     background-color: white;
+     
+     
+  }
+
 .video-cards{
     margin-top: 2rem;
     display: flex;
@@ -146,12 +163,36 @@ background-clip: text;
 }
 .card img{
     max-width: 100%;
+
     
 }
 .funny-videos-heading{
     text-align: center;
     margin-top: 5rem;
 }
+.overlay{
+    width: 13rem;
+    
+    border: 6px solid #F948B2 ;
+    
+    border-radius: 16px;
+    height: 15.2rem;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    display:none;
+}
+.card:hover .overlay{
+    display: flex ;
+}
+
+
 
 
 
